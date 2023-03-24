@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/7.css">
+<style>
+html { 
+background: url('bg.png') no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+body {
+margin: 0;
+}
+a {
+  color: inherit;
+}
+.rectangle {
+  bottom: 0px;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  background-color: rgb(0, 153, 204);
+
+}
+.icon  {
+  float: left;
+  margin-left: 10px;
+  padding: 5px;
+  opacity: 1;
+}
+img {
+  opacity: 1;
+}
+</style>
+</head>
+
+<body>
+<div class="window glass active" id="dialog-demo" role="dialog" aria-labelledby="dialog-title">
+<div class="title-bar">
+<div class="title-bar-text" id="dialog-title">Problem Diagnostics</div>
+<div class="title-bar-controls">
+<button aria-label="Close" onclick="history.back()"></button>
+</div>
+</div>
+<div class="window-body has-space">
+<h2 class="instruction instruction-primary">Identifying your problem...</h2>
+<div role="progressbar" class="marquee"></div>
+</div>
+<footer style="text-align: right">
+<button onclick="history.back()">Cancel</button>
+</footer>
+</div>
+
+<div class="window glass active" id="ie" role="dialog" aria-labelledby="dialog-title" style="min-width: 300px">
+<div class="title-bar">
+<div class="title-bar-text" id="dialog-title">Internet Explorer</div>
+<div class="title-bar-controls">
+<button aria-label="Minimize" onclick="history.back()"></button>
+<button aria-label="Close" onclick="history.back()"></button>
+</div>
+</div>
+<div class="window-body has-space">
+<button width="30"><-</button>
+<button>-></button>
+<input id="text26" type="text" style="width: 450px"/>
+<input type="search" placeholder="This is a demo :)" />
+<iframe src="" title="description" height="430" width="800"></iframe>
+</div>
+<div class="status-bar">
+<p class="status-bar-field">v1.0</p>
+</div>
+</div>
+
+<div class="window glass active" id="explorer" role="dialog" aria-labelledby="dialog-title" style="min-width: 300px">
+<div class="title-bar">
+<div class="title-bar-text" id="dialog-title"></div>
+<div class="title-bar-controls">
+<button aria-label="Minimize" onclick="history.back()"></button>
+<button aria-label="Close" onclick="history.back()"></button>
+</div>
+</div>
+<div class="window-body has-space">
+<button width="30"><-</button>
+<button>-></button>
+<input id="text26" type="text" style="width: 450px"/>
+<input type="search" placeholder="This is a demo :)" />
+<ul role="menubar">
+<li role="menuitem" tabindex="0">Organise</li>
+<li role="menuitem" tabindex="0">New Library</li>
+</ul>
+<iframe src="about:blank" title="description" height="430" width="800"></iframe>
+</div>
+<div class="status-bar">
+<p class="status-bar-field">v1.0</p>
+</div>
+</div>
+
+
+<div class="rectangle">
+<div class="icon">
+<a href="#dialog-demo">
+<img src="https://th.bing.com/th/id/R.dcdbea55f7b727a4513aad5b8c99cd8c?rik=tMR6txwEHF1VgQ&riu=http%3a%2f%2ffc03.deviantart.net%2ffs43%2fi%2f2009%2f137%2fa%2f8%2fWIndows_7_Orb_icon_by_skyangels.png&ehk=3gfDmOJAVNcvKe9aYdWaXuthmtTyPfnSxN6kTokBqLM%3d&risl=&pid=ImgRaw&r=0" alt="start" style="width:30px;height:30px;">
+</a>
+</div>
+<a href="#ie">
+<div class="icon">
+<img src="https://th.bing.com/th/id/R.9a0ebbfa6b79f0b7eb711bd468e82f66?rik=5zAlOR6bKbpdVQ&riu=http%3a%2f%2ffc08.deviantart.net%2ffs71%2ff%2f2013%2f087%2ff%2f4%2finternet_explorer_icon_by_slamiticon-d5zjlvr.png&ehk=Gy%2fydo9eM8HEp%2bjXSK51Q9iYSKXwn6vFvDKiIWZyID0%3d&risl=&pid=ImgRaw&r=0" alt="ie" style="width:30px;height:30px;">
+</a>
+</div>
+<a href="#explorer">
+<div class="icon">
+<img src="https://th.bing.com/th/id/R.5fb4a23e597d7fd371547167278e51fe?rik=Rlr4z3FX%2bN1n6g&riu=http%3a%2f%2fwww.domstechblog.com%2fwp-content%2fuploads%2f2012%2f12%2fWindows_Explorer_Icon.png&ehk=53DWY5O4v%2bKqWnbCjkEGisBuaqDrWJ%2bg9EyUA%2fRKIBc%3d&risl=&pid=ImgRaw&r=0" alt="ie" style="width:30px;height:30px;">
+</a>
+</div>
+<a href="#media">
+<div class="icon">
+<img src="https://winaero.com/blog/wp-content/uploads/2018/03/Windows-Media-Player-12-icon-big.png" alt="ie" style="width:30px;height:30px;">
+</a>
+</div>
+</div>
+</body>
+</html>
